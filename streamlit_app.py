@@ -1,34 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-st.markdown(
-    """
-    <style>
-    /* Primary color (buttons, sliders, radio, etc.) */
-    .stButton > button,
-    .stDownloadButton > button,
-    .stRadio > div[role='radiogroup'] > label[data-baseweb='radio'] div:first-child,
-    .stSlider [data-baseweb="slider"] [role="slider"] {
-        background-color: #3835ebff !important;
-        color: white !important;
-    }
-
-    /* Sidebar + secondary background */
-    [data-testid="stSidebar"],
-    .stAppViewContainer {
-        background-color: #f1aeaeff !important;
-    }
-
-    /* Text color + font */
-    html, body, [class*="css"] {
-        color: #000000 !important;
-        font-family: sans-serif !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 
 # 1. MUST be your first Streamlit call
 st.set_page_config(layout="wide")
