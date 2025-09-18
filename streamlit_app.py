@@ -11,7 +11,7 @@ df_net   = pd.read_pickle('sample_triangle1.pkl')
 
 triangles = {
     'LT Engineering': {'Gross': df_gross.copy(), 'Net': df_net.copy()},
-    'ST Engineering': {'Gross': df_gross.copy(), 'Net': df_net.copy()}
+    'ST Engineering': {'Gross': df_net.copy(), 'Net': df_gross.copy()}
 }
 
 segment    = st.sidebar.selectbox("Choose a segment:", list(triangles.keys()))
